@@ -60,8 +60,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-app.use(express.static(path.join(__dirname, "..", "build")));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "..", "client/build")));
 
 
 app.listen(PORT, () => {
