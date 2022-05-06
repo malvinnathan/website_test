@@ -15,6 +15,8 @@ var logger = require('morgan');
 var cors = require('cors');
 const bodyParser = require('body-parser')
 
+const PORT = process.env.PORT || 8080; 
+
 //Database stuffs
 var mongoose=require('mongoose');
 var Irt = mongoose.model("irt");
@@ -63,8 +65,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("The app is running!");
+app.listen(PORT, () => {
+  console.log(`The app is running at ${PORT}!`);
 })
 
 
