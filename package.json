@@ -1,34 +1,24 @@
 {
-  "name": "website",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:3000",
-  "dependencies": { 
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.1",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "cd server && npm start",
-    "build": "cd client && npm run build",
-    "install-client": "cd client & npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "client": "cd client && npm start"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
