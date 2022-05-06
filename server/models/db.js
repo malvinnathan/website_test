@@ -10,7 +10,7 @@ const app = express();
 const MONGO_URL = "mongodb+srv://lievaron:wmXYDDnh38dwP0Yg@cluster0.8okme.mongodb.net/database?retryWrites=true&w=majority";
 
 
-mongoose.connect(MONGO_URL || `mongodb://localhost/server`, {
+mongoose.connect(MONGO_URL || process.env.MONGO_URI || `mongodb://localhost/server`, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
